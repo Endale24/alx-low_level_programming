@@ -1,4 +1,4 @@
-#include "main.h"
+ #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -80,11 +80,8 @@ char **strtow(char *str)
 				c++;
 			}
 			words[b][c] = '\0';
-        		length = 0, c = 0;
-			str++;
-			b++; 
+			b++; c = 0; length = 0; str++;
 		}
 	}
 	return (words);
 }
-
